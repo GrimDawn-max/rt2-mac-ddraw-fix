@@ -38,6 +38,17 @@ The game always appears on the **main display** (the one with the menu bar).
 3. Start the game with GOG's **"Rt2 (force 800 x 600 mode)"** shortcut. Your other monitors stay usable.
 4. When you've finished, set the resolution back and make your usual screen the main display again.
 
+## Optional: play in a window with a BetterDisplay virtual screen
+
+If you'd rather keep all your real screens at their normal resolution, the game also runs on a virtual screen made with BetterDisplay, which you watch in a window.
+
+1. In BetterDisplay, create a virtual screen and set it to **800 × 600**.
+2. In System Settings › Displays, set that virtual screen to **Use as: Main display**.
+3. In BetterDisplay, open the virtual screen's **Picture in Picture** window (a Pro feature). Drag its corner to make it bigger.
+4. Start the game with the **"Rt2 (force 800 x 600 mode)"** shortcut.
+5. To play, move the mouse pointer onto the virtual screen (past the edge of your real screen, where the virtual screen sits in the Displays arrangement); you'll see the pointer in the window. If clicks don't reach the game, click its icon in the Dock once.
+6. When you've finished, make your usual screen the main display again.
+
 ## To remove
 
 Delete `ddraw.dll` from the game folder and remove the `ddraw` override.
