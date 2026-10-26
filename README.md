@@ -25,7 +25,7 @@ It also writes a short log, `ddrawlog.txt`, in the game folder, listing the disp
 2. **Main display:** the game uses the main display (the one with the menu bar). Before starting it, set that display to **800x600** (or 1024x768). In System Settings › Displays › Advanced…, turn on *Show resolutions as list*, then *Show all resolutions*. **Keep the display's normal refresh rate** (on a MacBook that's the default, ProMotion). The game then never has to switch the display, so your other screens stay usable while you play, whether the game is on the MacBook screen or an external one. With a different refresh rate (for example 60 Hz on a MacBook), macOS blacks out every other screen until you quit. Set the resolution back when you've finished.
 3. **Start option:** start the game with `/800600`, for example using GOG's "Rt2 (force 800 x 600 mode)" shortcut. With the display already at 800x600, the game never has to switch modes.
 4. **This fix:**
-   - copy `ddraw.dll` into `C:\GOG Games\Railroad Tycoon 2\`;
+   - copy `ddraw.dll` into the game folder, next to `RT2_PLAT.EXE` (GOG's default: `C:\GOG Games\Railroad Tycoon II\`);
    - in CrossOver: bottle › Wine Configuration › **Libraries**, add `ddraw` and set it to **native, then builtin**.
 5. **In the game:** Options › General: Color Depth **16 bit**, Full screen **on**, Color mouse cursor **off** (it causes crashes). When a campaign scenario starts, other screens may flash black for under a second while the intro video switches to 256 colours; that's expected.
 
