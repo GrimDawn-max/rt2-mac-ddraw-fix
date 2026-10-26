@@ -29,6 +29,15 @@ It also writes a short log, `ddrawlog.txt`, in the game folder, listing the disp
    - in CrossOver: bottle › Wine Configuration › **Libraries**, add `ddraw` and set it to **native, then builtin**.
 5. **In the game:** leave Options › Full screen **on**, and Color mouse cursor **off**.
 
+## With two or more monitors
+
+The game always appears on the **main display** (the one with the menu bar).
+
+1. In System Settings › Displays, select the screen you want to play on and set **Use as: Main display**. (Skip this if it's already the main display.)
+2. For that screen, set the resolution to **800 × 600**: click **Advanced…**, turn on *Show resolutions as list*, then *Show all resolutions*. Leave **Refresh rate** at its default.
+3. Start the game with GOG's **"Rt2 (force 800 x 600 mode)"** shortcut. Your other monitors stay usable.
+4. When you've finished, set the resolution back and make your usual screen the main display again.
+
 ## To remove
 
 Delete `ddraw.dll` from the game folder and remove the `ddraw` override.
