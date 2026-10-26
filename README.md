@@ -49,6 +49,13 @@ If you'd rather keep all your real screens at their normal resolution, the game 
 5. To play, move the mouse pointer onto the virtual screen (past the edge of your real screen, where the virtual screen sits in the Displays arrangement); you'll see the pointer in the window. If clicks don't reach the game, click its icon in the Dock once.
 6. When you've finished, make your usual screen the main display again.
 
+## Steam version
+
+The setup is the same, with two differences (not yet tested; please report back if you try it):
+
+- Put `ddraw.dll` in the game's Steam folder, next to `RT2_PLAT.EXE` (in Steam: right-click the game › Manage › Browse local files).
+- Instead of the GOG shortcut, add `/800600` in Steam: right-click the game › Properties › **Launch Options**.
+
 ## To remove
 
 Delete `ddraw.dll` from the game folder and remove the `ddraw` override.
