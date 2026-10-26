@@ -27,7 +27,7 @@ It also writes a short log, `ddrawlog.txt`, in the game folder, listing the disp
 4. **This fix:**
    - copy `ddraw.dll` into `C:\GOG Games\Railroad Tycoon 2\`;
    - in CrossOver: bottle › Wine Configuration › **Libraries**, add `ddraw` and set it to **native, then builtin**.
-5. **In the game:** leave Options › Full screen **on**, and Color mouse cursor **off**.
+5. **In the game:** Options › General: Color Depth **16 bit**, Full screen **on**, Color mouse cursor **off** (it causes crashes). When a campaign scenario starts, other screens may flash black for under a second while the intro video switches to 256 colours; that's expected.
 
 ## With two or more monitors
 
