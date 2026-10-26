@@ -12,15 +12,18 @@ New Scenario and the menus aren't affected, only campaigns.
 
 ## What the file does
 
-It sits beside the game and passes every DirectDraw call to CrossOver's own DirectDraw. It changes only one thing: if a display mode is refused, it asks again at the size already in use, with the same colour depth. The intro video then plays in the top-left of the screen and the scenario loads.
+It sits beside the game and passes every DirectDraw call to CrossOver's own DirectDraw, with two changes:
+
+- **Campaign videos:** if a display mode is refused, it asks again at the size already in use, with the same colour depth. The intro video then plays in the top-left of the screen and the scenario loads.
+- **Faster start on MacBook screens:** when the game asks which display modes exist, it answers with the classic modes the game uses (640x480, 800x600, 1024x768), each checked against your display. Otherwise a MacBook's built-in screen reports over a thousand modes, and the game never finishes starting.
 
 It also writes a short log, `ddrawlog.txt`, in the game folder, listing the display modes the game asked for and the answers. It doesn't connect to anything or change any other files.
 
 ## Getting the game running
 
 1. **Bottle:** a plain Windows 10 (64-bit) bottle with the GOG version installed. Don't add cnc-ddraw or dgVoodoo2; both crash this game under CrossOver.
-2. **Main display:** the game uses the main display (the one with the menu bar). Before starting it, set that display to **800x600** (or 1024x768). In System Settings › Displays › Advanced…, turn on *Show resolutions as list*, then *Show all resolutions*. An **external display** is the most reliable; on a MacBook's built-in screen the game sometimes never finishes starting (sound, no picture). While you play, your other displays go black; that's normal. Set the resolution back when you've finished.
-3. **Start option:** if your display has no 1024x768 mode, start the game with `/800600`, for example using GOG's "Rt2 (force 800 x 600 mode)" shortcut.
+2. **Main display:** the game uses the main display (the one with the menu bar). Before starting it, set that display to **800x600** (or 1024x768). In System Settings › Displays › Advanced…, turn on *Show resolutions as list*, then *Show all resolutions*. **If you have an external display, play on it**: your MacBook screen stays usable while you play. If the game runs on the MacBook's own screen, macOS blacks out any external display until you quit. With only a MacBook, playing on the built-in screen works. Set the resolution back when you've finished.
+3. **Start option:** start the game with `/800600`, for example using GOG's "Rt2 (force 800 x 600 mode)" shortcut. With the display already at 800x600, the game never has to switch modes.
 4. **This fix:**
    - copy `ddraw.dll` into `C:\GOG Games\Railroad Tycoon 2\`;
    - in CrossOver: bottle › Wine Configuration › **Libraries**, add `ddraw` and set it to **native, then builtin**.
