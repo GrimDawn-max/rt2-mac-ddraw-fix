@@ -22,7 +22,7 @@ It also writes a short log, `ddrawlog.txt`, in the game folder, listing the disp
 ## Getting the game running
 
 1. **Bottle:** a plain Windows 10 (64-bit) bottle with the GOG version installed. Don't add cnc-ddraw or dgVoodoo2; both crash this game under CrossOver.
-2. **Main display:** the game uses the main display (the one with the menu bar). Before starting it, set that display to **800x600** (or 1024x768). In System Settings › Displays › Advanced…, turn on *Show resolutions as list*, then *Show all resolutions*. **If you have an external display, play on it**: your MacBook screen stays usable while you play. If the game runs on the MacBook's own screen, macOS blacks out any external display until you quit. With only a MacBook, playing on the built-in screen works. Set the resolution back when you've finished.
+2. **Main display:** the game uses the main display (the one with the menu bar). Before starting it, set that display to **800x600** (or 1024x768). In System Settings › Displays › Advanced…, turn on *Show resolutions as list*, then *Show all resolutions*. **Keep the display's normal refresh rate** (on a MacBook that's the default, ProMotion). The game then never has to switch the display, so your other screens stay usable while you play, whether the game is on the MacBook screen or an external one. With a different refresh rate (for example 60 Hz on a MacBook), macOS blacks out every other screen until you quit. Set the resolution back when you've finished.
 3. **Start option:** start the game with `/800600`, for example using GOG's "Rt2 (force 800 x 600 mode)" shortcut. With the display already at 800x600, the game never has to switch modes.
 4. **This fix:**
    - copy `ddraw.dll` into `C:\GOG Games\Railroad Tycoon 2\`;
