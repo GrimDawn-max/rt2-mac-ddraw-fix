@@ -14,7 +14,7 @@ New Scenario and the menus aren't affected, only campaigns.
 
 It sits beside the game and passes every DirectDraw call to CrossOver's own DirectDraw, with two changes:
 
-- **Campaign videos:** if a display mode is refused, it asks again at the size already in use, with the same colour depth. The intro video then plays in the top-left of the screen and the scenario loads.
+- **Campaign videos:** if a display mode is refused, it asks again at the size already in use, with the same colour depth. The intro video then plays and the scenario loads. Usually the video fills the screen; on some setups it may play in a small area at the top-left. Either way the game itself runs full screen.
 - **Faster start on MacBook screens:** when the game asks which display modes exist, it answers with the classic modes the game uses (640x480, 800x600, 1024x768), each checked against your display. Otherwise a MacBook's built-in screen reports over a thousand modes, and the game never finishes starting.
 
 It also writes a short log, `ddrawlog.txt`, in the game folder, listing the display modes the game asked for and the answers. It doesn't connect to anything or change any other files.
